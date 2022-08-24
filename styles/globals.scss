@@ -1,0 +1,47 @@
+@import '../styles/variables.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  background-color: $light-grey;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: $white;
+}
+
+.without-categories{
+  margin-top: 45px;
+}
+
+main{
+  padding: 0 $padding-containers;
+}
+
+.btn{
+  width: 100%;
+  height: 35px;
+  transition: .3s ease-in;
+  border:none;
+  cursor: pointer;
+  &-blue{
+    background-color: $button-blue;
+    color: $white;
+    &:hover{
+      background-color: $white;
+      color: $button-blue;
+      border: 1px solid $button-blue;
+    }
+  }
+}

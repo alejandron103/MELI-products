@@ -1,0 +1,64 @@
+@import '../styles/variables.scss';
+
+.Header{
+  background-color: $meli-yellow;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 $padding-containers;
+}
+
+.Finder{
+  margin-left: 30px;
+  width: 100%;
+  display: flex;
+}
+
+.FinderInput{
+  border: none;
+  padding: 8px;
+  color: $black;
+  font-size: calculateRem(14px);
+  width: 96%;
+  &::placeholder{
+    color: $medium-grey;
+  }
+  &:focus-visible{
+    outline: none;
+  }
+}
+
+.SearchButton{
+  font-size: 0;
+  background-image: url(../public/search.png);
+  background-size: 20px;
+  background-color: $light-grey;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  top: 0;
+  width: 5%;
+  cursor: pointer;
+}
+
+.Breadcrumb{
+  margin: 16px 0;
+  font-size: calculateRem(12px);
+  color: $medium-grey;
+  span {
+    margin-right: 20px;
+    position: relative;
+    &::before{
+      content: '>';
+      position: absolute;
+      left: calc(100% + 5px);
+      top: 0%;
+    }
+    &:last-child{
+      font-weight: 700;
+      &::before{
+        display: none;
+      }
+    }
+  }
+}

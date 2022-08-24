@@ -1,0 +1,16 @@
+$meli-yellow: #FFE600;
+$black: #333333;
+$dark-grey: #666666;
+$medium-grey: #999999;
+$light-grey: #EEEEEE;
+$white: #ffffff;
+$button-blue: #3483FA;
+
+$padding-containers: 10%;
+$font-family: 'Lato', sans-serif;
+
+
+@function calculateRem($size) {
+    $remSize: calc($size / 16px);
+    @return #{$remSize}rem;
+  }

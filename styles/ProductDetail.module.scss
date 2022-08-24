@@ -1,0 +1,41 @@
+@import '../styles/variables.scss';
+
+.ProductDetail{
+    padding: 20px;
+}
+.ContainerDetail{
+    display: flex;
+}
+.ProductInfo{
+    margin-left: 10vw;
+    width: 40%;
+}
+
+.ProductImage{
+    object-fit: contain;
+}
+
+.ProductTags{
+    font-size: calculateRem(12px);
+    margin-bottom: 16px;  
+}
+
+.productTitle{
+    font-size: calculateRem(20px);
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.productPrice{
+    font-size: calculateRem(36px);
+    margin: 32px 0;
+    display: block;
+}
+.ProductContainerDescription{
+    margin-top: 40px;
+}
+.DescriptionTitle{
+    font-size: calculateRem(26px);
+}
+.DescriptionText{
+    font-size: calculateRem(14px);
+}

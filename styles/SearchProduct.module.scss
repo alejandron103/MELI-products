@@ -1,0 +1,62 @@
+@import '../styles/variables.scss';
+
+.ProductSearch{
+    padding: 16px; 
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        right: 20px;
+        height: 1px;
+        background-color: $light-grey;
+    }
+    a{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ContainerContent{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    font-weight: 400;
+    width: 65vw;
+}
+.ContainerPrice{
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.FreeShipping{
+    width: 15px;
+    height: 15px;
+    background-image: url(../public/free-shipping.png);
+    background-size: cover;
+    display: block;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ProductPrice{
+    font-size: calculateRem(22px);
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+
+.ProductTitle{
+    font-weight: 400;
+    font-size: calculateRem(18px);
+    max-width: 80%;
+}
+
+.ProdctAddress{
+    font-size: calculateRem(12px);
+    color: $medium-grey;
+    margin-top: 20px;
+    width: 10vw;
+}
