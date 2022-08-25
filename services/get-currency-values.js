@@ -3,10 +3,14 @@ import { CONSTANTS } from "utils/constants"
 export async function getCurrencyValues(currencyCode){
     if(currencyCode){
         const request = await fetch(`${CONSTANTS.BASE_API}currencies/${currencyCode}`)
-        const response = await request.json()
-        const productDescription = await response
-        const { symbol, decimal_places } = productDescription
-        return { symbol, decimal_places } 
+        const productDescription = await request.json()
+        if(request.ok){
+            const { symbol, decimal_places } = productDescription
+            return { symbol, decimal_places } 
+        }
+        console.warn('currency values not found')
+        return null
     }
-    return {}
+    console.error('currency code empty')
+    throw new Error('currency values not found')
 }
