@@ -16,6 +16,10 @@
         display: flex;
         width: 100%;
         height: 100%;
+        @media(max-width:$sm-size){
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
 
@@ -25,6 +29,9 @@
     margin-left: 16px;
     font-weight: 400;
     width: 65vw;
+    @media(max-width:$sm-size){
+        display: block;
+    }
 }
 .ContainerPrice{
     margin-bottom: 32px;
@@ -59,4 +66,7 @@
     color: $medium-grey;
     margin-top: 20px;
     width: 10vw;
+    @media(max-width:$sm-size){
+        width: 100%;
+    }
 }

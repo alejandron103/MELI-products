@@ -5,10 +5,17 @@
 }
 .ContainerDetail{
     display: flex;
+    @media(max-width:$sm-size){
+        display: block;
+    }
 }
 .ProductInfo{
     margin-left: 10vw;
     width: 40%;
+    @media(max-width:$sm-size){
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .ProductImage{

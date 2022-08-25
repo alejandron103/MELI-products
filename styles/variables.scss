@@ -9,6 +9,7 @@ $button-blue: #3483FA;
 $padding-containers: 10%;
 $font-family: 'Lato', sans-serif;
 
+$sm-size: 500px;
 
 @function calculateRem($size) {
     $remSize: calc($size / 16px);

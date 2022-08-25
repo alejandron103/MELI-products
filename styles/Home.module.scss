@@ -26,6 +26,9 @@
   &:focus-visible{
     outline: none;
   }
+  @media(max-width:$sm-size){
+    width: 85%;
+  }
 }
 
 .SearchButton{
@@ -39,6 +42,9 @@
   top: 0;
   width: 5%;
   cursor: pointer;
+  @media(max-width:$sm-size){
+    width: 15%;
+  }
 }
 
 .Breadcrumb{
